@@ -117,7 +117,6 @@ export function extractAmount(summary: string): string {
 
 export interface GrantsApiMeta {
   bizinfo: { ok: boolean; count: number; error?: string };
-  kstartup: { ok: boolean; count: number; error?: string };
   fetchedAt: string;
 }
 

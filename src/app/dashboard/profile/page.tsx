@@ -11,7 +11,7 @@ export default function ProfilePage() {
   return (
     <div>
       <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-        기업마당 · K-Startup API 연동 완료
+        기업마당 API 연동 완료
       </div>
 
       <div className="mb-8">
@@ -66,7 +66,7 @@ export default function ProfilePage() {
             <ul className="space-y-1.5 text-sm text-brand-100">
               <li>· 무제한 AI 추천</li>
               <li>· 마감 알림 포함</li>
-              <li>· 기업마당 + K-Startup API</li>
+              <li>· 기업마당 API</li>
             </ul>
             <button
               type="button"

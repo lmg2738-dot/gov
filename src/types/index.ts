@@ -5,7 +5,7 @@ export type GrantCategory =
   | "tax"
   | "startup";
 
-export type GrantSource = "기업마당" | "K-Startup";
+export type GrantSource = "기업마당";
 
 export type CompanySize = "startup" | "small" | "medium" | "large";
 

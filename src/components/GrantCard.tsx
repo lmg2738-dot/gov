@@ -175,30 +175,22 @@ export function ApiStatusBanner({
 
   if (!meta) return null;
 
-  const parts = [
-    meta.bizinfo.ok
-      ? `기업마당 ${meta.bizinfo.count}건`
-      : `기업마당 실패`,
-    meta.kstartup.ok
-      ? `K-Startup ${meta.kstartup.count}건`
-      : `K-Startup 실패`,
-  ];
-
-  const hasFailure = !meta.bizinfo.ok || !meta.kstartup.ok;
+  const statusText = meta.bizinfo.ok
+    ? `기업마당 ${meta.bizinfo.count}건`
+    : `기업마당 실패${meta.bizinfo.error ? `: ${meta.bizinfo.error}` : ""}`;
 
   return (
     <div
       className={cn(
         "mb-6 flex items-center gap-3 rounded-xl border px-4 py-3 text-sm",
-        hasFailure
-          ? "border-amber-200 bg-amber-50 text-amber-800"
-          : "border-emerald-200 bg-emerald-50 text-emerald-800"
+        meta.bizinfo.ok
+          ? "border-emerald-200 bg-emerald-50 text-emerald-800"
+          : "border-amber-200 bg-amber-50 text-amber-800"
       )}
     >
       <ExternalLink className="h-4 w-4 shrink-0" />
       <p>
-        <strong>실시간 API 연동</strong> — {parts.join(" · ")}
-        {hasFailure && " (일부 소스 조회 실패)"}
+        <strong>실시간 API 연동</strong> — {statusText}
       </p>
     </div>
   );

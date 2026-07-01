@@ -97,7 +97,7 @@ export default function DashboardPage() {
   };
 
   const ready = profileReady && bookmarkReady && notifyReady && !loading;
-  const sourceCount = [meta?.bizinfo.ok, meta?.kstartup.ok].filter(Boolean).length;
+  const sourceCount = meta?.bizinfo.ok ? 1 : 0;
 
   return (
     <div>

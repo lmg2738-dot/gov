@@ -19,7 +19,7 @@ const FEATURES = [
   {
     icon: Sparkles,
     title: "AI 추천",
-    desc: "기업마당·K-Startup 공공 API 데이터를 분석해 지원사업을 추천합니다.",
+    desc: "기업마당 공공 API 데이터를 분석해 지원사업을 추천합니다.",
   },
   {
     icon: Bookmark,
@@ -33,7 +33,7 @@ const FEATURES = [
   },
 ];
 
-const APIS = ["기업마당", "K-Startup"];
+const APIS = ["기업마당"];
 
 export default function LandingPage() {
   return (

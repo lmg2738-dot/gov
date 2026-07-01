@@ -4,7 +4,7 @@
 
 ## 기능
 
-- 기업마당 · K-Startup 공공 API 실시간 연동
+- 기업마당 공공 API 실시간 연동
 - OpenRouter **무료 모델** 기반 AI 맞춤 추천 (실패 모델 자동 제외)
 - 북마크 · 마감 알림 · 기업 프로필
 
@@ -28,4 +28,4 @@ npm run dev
 ## 기술 스택
 
 - Next.js 15 · TypeScript · Tailwind CSS
-- 기업마당 API · K-Startup API · OpenRouter API
+- 기업마당 API · OpenRouter API
