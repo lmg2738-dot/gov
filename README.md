@@ -25,6 +25,17 @@ npm run dev
 
 기본 포트: **60003** — http://localhost:60003
 
+## 배포 (Vercel)
+
+1. GitHub에 push
+2. [Vercel](https://vercel.com) → Import Project → `lmg2738-dot/gov` 선택
+3. 환경변수 설정:
+   - `BIZINFO_API_KEY`
+   - `OPENROUTER_API_KEY`
+   - `NEXT_PUBLIC_APP_URL` (배포 URL, 예: `https://gov-xxx.vercel.app`)
+
+GitHub Actions 자동 배포를 쓰려면 Repository Secrets에 `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` 추가.
+
 ## 기술 스택
 
 - Next.js 15 · TypeScript · Tailwind CSS
